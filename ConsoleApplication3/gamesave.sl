@@ -1,0 +1,1 @@
+World 1; Level 0; Life 5; Gold Coins 0; Star 0;
