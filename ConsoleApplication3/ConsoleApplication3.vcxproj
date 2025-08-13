@@ -136,9 +136,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="主程序.cpp" />
-    <ClCompile Include="验证.cpp" />
-    <ClCompile Include="内容数据.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="save_load.cpp" />
+    <ClCompile Include="userInput_before_start.cpp" />
+    <ClCompile Include="story_database.cpp" />
+    <ClCompile Include="error_do_and_check.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="twj.h" />

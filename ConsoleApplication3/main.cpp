@@ -5,33 +5,13 @@
 #include <Windows.h>
 #include "twj.h"
 int main() {
-	std::ofstream errorlog("error.log", std::ofstream::out | std::ofstream::app); //挂载错误日志
-	std::cout << "Super Monkey Wan！Game\n";
-	std::cout << "输入L开始游戏\n";
-	char userInput;   //userInput接受一切的用户输入内容
-	std::cin >> userInput;
-	//效验数据 用数据库抽取法检查
-	if (userInput == 'L' || userInput == 'l') {
-		std::cout << "数据效验中...Loading";
-		if (!XY()) {
-			std::cerr << "数据疑似被篡改，请重新安装";
-			Sleep(2000);
-			return -1;
-		}
-		userInput = ' ';
+	try {
+		userinput();
 	}
-	else {
+	catch (...) {
 		return -1;
 	}
-	std::cout << "数据效验完成\n";
-	std::cout << "开始新游戏(A)还是继续游戏(B)？\n";
-	std::cin >> userInput;
-	if (userInput == 'A' || userInput == 'a') {
-		std::ofstream gameload("gamesave.sl");
-		gameload << "World 1; Level 0; Life 5; Gold Coins 0; Star 0;";
-		gameload.close();
-		userInput = 'B';
-	}
+	/*
 	std::string line;
 	std::vector<std::string> loadfile;
 	if (userInput == 'B' || userInput == 'b') {
@@ -86,8 +66,6 @@ int main() {
 			return -4;
 		}
 	}
-
-	std::cout << "欢迎进入SuperMonkeyWAN的世界！";
-
-	errorlog.close();//关闭挂载错误日志
+	*/
+	return 0;
 }

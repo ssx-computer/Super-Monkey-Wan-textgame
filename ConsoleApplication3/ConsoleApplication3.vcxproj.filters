@@ -15,13 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="主程序.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="验证.cpp">
+    <ClCompile Include="story_database.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="内容数据.cpp">
+    <ClCompile Include="error_do_and_check.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="userInput_before_start.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="save_load.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

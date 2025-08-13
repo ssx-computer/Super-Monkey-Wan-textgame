@@ -2,5 +2,8 @@
 #include <iostream>
 struct story;
 struct monkeyWando;
-bool XY();
+bool check();
 double mwando(int wdoit);
+void errorlog(int canshu);
+void userinput();
+void load(char c);
